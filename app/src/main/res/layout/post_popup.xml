@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/post_popup_background">
+
+        <EditText
+            android:id="@+id/popup_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/add_post_popup_edittext_style"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="title"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <EditText
+            android:id="@+id/popup_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/add_post_popup_edittext_style"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="description"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:maxLines="10"
+            android:minLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popup_title" />
+        
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/popup_userPhoto"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/userphoto"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/popup_post_img"
+            android:layout_width="0dp"
+            android:layout_height="256dp"
+            android:layout_marginTop="8dp"
+            android:background="#2d2d2d"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popup_description" />
+
+        <ImageView
+            android:id="@+id/popup_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_create_btn"
+            android:src="@drawable/ic_check_24"
+            app:layout_constraintBottom_toBottomOf="@id/popup_post_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popup_post_img"
+            tools:layout_editor_absoluteY="393dp" />
+
+        <ProgressBar
+            android:id="@+id/popup_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_bg"
+            android:padding="4dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/popup_add_btn"
+            app:layout_constraintLeft_toLeftOf="@id/popup_add_btn"
+            app:layout_constraintRight_toRightOf="@id/popup_add_btn"
+            app:layout_constraintTop_toTopOf="@id/popup_add_btn"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="391dp" />
+
+        <TextView
+            android:id="@+id/popup_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Maryam_dongi"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/popup_userPhoto"
+            app:layout_constraintStart_toEndOf="@+id/popup_userPhoto"
+            app:layout_constraintTop_toTopOf="@+id/popup_userPhoto" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.13" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

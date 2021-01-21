@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/edit_profile"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_delete_account"
+            android:icon="@drawable/delete_account"
+            android:title="Delete Account" />
+
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/signout"
+            android:title="Sign Out" />
+
+    </group>
+</menu>
+
+    <!--    <item android:title="second section">-->
+
+    <!--        <menu>-->
+    <!--            <group android:checkableBehavior="single">-->
+    <!--                <item-->
+    <!--                    android:id="@+id/item_one1"-->
+    <!--                    android:title="item 1" />-->
+    <!--                <item-->
+    <!--                    android:id="@+id/item_two2"-->
+    <!--                    android:title="item 2" />-->
+    <!--                <item-->
+    <!--                    android:id="@+id/item_three3"-->
+    <!--                    android:title="item 3" />-->
+    <!--                <item-->
+    <!--                    android:id="@+id/item_four4"-->
+    <!--                    android:title="item 4" />-->
+    <!--            </group>-->
+
+
+    <!--        </menu>-->
+
+    <!--    </item>-->
+
+

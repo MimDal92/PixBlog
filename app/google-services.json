@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "394568137428",
+    "firebase_url": "https://blog-7921e.firebaseio.com",
+    "project_id": "blog-7921e",
+    "storage_bucket": "blog-7921e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394568137428:android:3792f4a32ed0dab3fb1941",
+        "android_client_info": {
+          "package_name": "com.mimdal.blog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394568137428-ubo8p2lpqifvkmsfjmv4gqb25lelehiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwvv5jrson_TH5k0zrwLSeF49_5xYZc6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394568137428-ubo8p2lpqifvkmsfjmv4gqb25lelehiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
